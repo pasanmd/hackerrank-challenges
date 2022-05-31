@@ -1,0 +1,10 @@
+for i in {1..99}
+do
+   j=$(expr $i % 2)
+   if [ $j -eq 1 ]
+    then
+      echo $i;
+    else
+      echo " " > /dev/null;
+   fi
+done
